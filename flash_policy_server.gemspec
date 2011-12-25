@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "flash_policy_server"
-  s.version = "0.0.6"
+  s.version = "0.0.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dave hrycyszyn"]
   s.date = "2011-12-25"
-  s.description = "\n    This is a simple Ruby-based policy server to serve Flash's crossdomain.xml \n    policy file.\n\n    The web is increasingly realtime, but websockets still aren\342\200\231t supported on \n    older browser clients. Many server push libraries (e.g. socket.io) attempt \n    to use websockets, with a Flash fallback. Others (amqp.js, for instance) \n    are Flash only.\n\n    When using Flash sockets, it's necessary to have a policy server running on \n    port 843, in order to set cross domain policy. This library does the job.\n  "
+  s.description = "\n    This is a simple Ruby-based policy server to serve Flash's crossdomain.xml \n    policy file.\n\n    The web is increasingly realtime, but websockets still aren't supported on \n    older browser clients. Many server push libraries (e.g. socket.io) attempt \n    to use websockets, with a Flash fallback. Others (amqp.js, for instance) \n    are Flash only.\n\n    When using Flash sockets, it's necessary to have a policy server running on \n    port 843, in order to set cross domain policy. This library does the job.\n  "
   s.email = "dave.hrycyszyn@headlondon.com"
   s.executables = ["flash_policy_server"]
   s.extra_rdoc_files = [
