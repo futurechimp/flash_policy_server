@@ -5,7 +5,7 @@ if !File.exist?("crossdomain.xml")
   $stderr.puts("Please put a crossdomain.xml file in the current working directory.")
   $stderr.puts("Here's a sample crossdomain.xml: ")
   $stderr.puts(" ")
-  sample_policy = File.open("generators/crossdomain.xml", "rb").read
+  sample_policy = File.open("#{File.dirname(__FILE__)}/../generators/crossdomain.xml", "rb").read
   $stderr.puts %Q(#{sample_policy})
   $stderr.puts(" ")
   exit(1)
