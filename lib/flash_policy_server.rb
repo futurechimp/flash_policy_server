@@ -5,6 +5,7 @@ class FlashPolicyServer
   # Loads up a policy file from pwd and starts the server. 
   #
   def run!
+    puts "Starting policy server..."
     load_policy_file
     start_server
   end
@@ -20,7 +21,7 @@ class FlashPolicyServer
     loop do
       Thread.start(server.accept) do |client|
         begin
-          client.puts %Q(@@policy)
+          client.puts %Q(#{@@policy})
           client.close
         rescue Exception => e
           puts e.message
