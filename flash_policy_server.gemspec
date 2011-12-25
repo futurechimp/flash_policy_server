@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/flash_policy_server",
+    "flash_policy_server.gemspec",
     "generators/crossdomain.xml",
     "lib/flash_policy_server.rb",
     "test/helper.rb",
