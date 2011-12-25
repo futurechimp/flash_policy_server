@@ -30,7 +30,7 @@ Jeweler::Tasks.new do |gem|
     port 843, in order to set cross domain policy. This library does the job.
   }
   gem.email = "dave.hrycyszyn@headlondon.com"
-  gem.authors = ["dave"]
+  gem.authors = ["Dave Hrycyszyn"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
