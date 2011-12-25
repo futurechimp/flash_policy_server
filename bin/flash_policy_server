@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
 require 'flash_policy_server'
 
-
 if !File.exist?("crossdomain.xml")
-  $stderr.puts("Please generate a crossdomain.xml file")
+  $stderr.puts("Please put a crossdomain.xml file in the current working directory.")
   exit(1)
 end
 
