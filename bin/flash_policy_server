@@ -3,6 +3,11 @@ require 'flash_policy_server'
 
 if !File.exist?("crossdomain.xml")
   $stderr.puts("Please put a crossdomain.xml file in the current working directory.")
+  $stderr.puts("Here's a sample crossdomain.xml: ")
+  $stderr.puts(" ")
+  sample_policy = File.open("generators/crossdomain.xml", "rb").read
+  $stderr.puts %Q(#{sample_policy})
+  $stderr.puts(" ")
   exit(1)
 end
 
