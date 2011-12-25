@@ -14,7 +14,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "flash_policy_server"
-  gem.homepage = "http://github.com/futurechimp/flash-policy-server"
+  gem.homepage = "http://github.com/futurechimp/flash_policy_server"
   gem.license = "MIT"
   gem.summary = %Q{A flash policy server.}
   gem.description = %Q{
