@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "flash_policy_server"
   gem.homepage = "http://github.com/futurechimp/flash-policy-server"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A flash policy server.}
+  gem.description = %Q{A flash policy server.}
   gem.email = "dave.hrycyszyn@headlondon.com"
   gem.authors = ["dave"]
   # dependencies defined in Gemfile
