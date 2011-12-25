@@ -21,7 +21,7 @@ Jeweler::Tasks.new do |gem|
     This is a simple Ruby-based policy server to serve Flash's crossdomain.xml 
     policy file.
 
-    The web is increasingly realtime, but websockets still aren’t supported on 
+    The web is increasingly realtime, but websockets still aren't supported on 
     older browser clients. Many server push libraries (e.g. socket.io) attempt 
     to use websockets, with a Flash fallback. Others (amqp.js, for instance) 
     are Flash only.
