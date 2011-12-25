@@ -1,6 +1,28 @@
-= flash policy server
+= A Flash Policy Server in Ruby 
 
-Description goes here.
+This is a simple Ruby-based policy server to serve Flash's crossdomain.xml policy file.
+
+== Rationale
+
+The web is increasingly realtime, but websockets still aren't supported on older browser clients. Many server push libraries (e.g. socket.io) attempt to use websockets, with a Flash fallback. Others (amqp.js, for instance) are Flash only. 
+
+When using Flash sockets, it's necessary to have a policy server running on port 843, in order to set cross domain policy. This library does the job.
+
+== Usage
+
+Because Adobe was kind enough to pick a low port (843), the server needs to be run as root:
+
+ sudo flash_policy_server
+
+If you don't yet have a crossdomain.xml in your current working directory, you'll be prompted to make one before the server can start. *NB*: the sample crossdomain.xml in the usage prompt is the most permissive possible policy.  
+
+You should read up on the crossdomain.xml spec if you don't understand the security implications of this file. It's here:
+
+http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html
+
+== Installation
+
+ gem install flash_policy_server
 
 == Contributing to flash-policy-server
  
