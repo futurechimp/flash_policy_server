@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'flash_policy_server'
+
+
+if !File.exist?("crossdomain.xml")
+  $stderr.puts("Please generate a crossdomain.xml file")
+  exit(1)
+end
+
+FlashPolicyServer.new().run!

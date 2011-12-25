@@ -1,4 +1,4 @@
-= flash-policy-server
+= flash policy server
 
 Description goes here.
 
