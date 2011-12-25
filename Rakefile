@@ -13,12 +13,22 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "flash_policy_server"
   gem.homepage = "http://github.com/futurechimp/flash-policy-server"
   gem.license = "MIT"
   gem.summary = %Q{A flash policy server.}
-  gem.description = %Q{A flash policy server.}
+  gem.description = %Q{
+    This is a simple Ruby-based policy server to serve Flash’s crossdomain.xml 
+    policy file.
+
+    The web is increasingly realtime, but websockets still aren’t supported on 
+    older browser clients. Many server push libraries (e.g. socket.io) attempt 
+    to use websockets, with a Flash fallback. Others (amqp.js, for instance) 
+    are Flash only.
+
+    When using Flash sockets, it’s necessary to have a policy server running on 
+    port 843, in order to set cross domain policy. This library does the job.
+  }
   gem.email = "dave.hrycyszyn@headlondon.com"
   gem.authors = ["dave"]
   # dependencies defined in Gemfile
