@@ -16,9 +16,9 @@ Because Adobe was kind enough to pick a low port (843), the server needs to be r
 
 If you don't yet have a crossdomain.xml in your current working directory, you'll be prompted to make one before the server can start. *NB*: the sample crossdomain.xml in the usage prompt is the most permissive possible policy.  
 
-You should read up on the crossdomain.xml spec if you don't understand the security implications of this file. It's here:
+You should read up on the uses of crossdomain.xml if you don't understand the security implications of this file. It's here:
 
-http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html
+http://www.adobe.com/devnet/flashplayer/articles/socket_policy_files.html
 
 == Installation
 
