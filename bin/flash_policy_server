@@ -8,7 +8,7 @@ if !File.exist?("crossdomain.xml")
   sample_policy = File.open("#{File.dirname(__FILE__)}/../generators/crossdomain.xml", "rb").read
   $stderr.puts %Q(#{sample_policy})
   $stderr.puts(" ")
-  $stderr.puts("This is the most permissive setting, and may be insecure. If you don't understand Flash policy files, you should read up about them, at http://www.adobe.com/devnet/flashplayer/articles/socket_policy_files.html")
+  $stderr.puts("This is the most permissive setting, and is insecure. If you don't understand Flash policy files, you should read up about them, at http://www.adobe.com/devnet/flashplayer/articles/socket_policy_files.html")
 
   exit(1)
 end
