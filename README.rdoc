@@ -24,6 +24,15 @@ http://www.adobe.com/devnet/flashplayer/articles/socket_policy_files.html
 
  gem install flash_policy_server
 
+== RVM gotcha!
+
+*Note*: If you're using Ruby 1.9 and RVM, you'll need to run the server as:
+
+ rvmsudo flash_policy_server
+ 
+See http://ruby.about.com/od/rubyversionmanager/qt/Rvm-And-Sudo.htm for
+an explanation. 
+
 == Contributing to flash-policy-server
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
