@@ -39,9 +39,9 @@ Don't like running stuff as root? Run it in a {docker}[http://www.docker.io/] co
 
  sh build.sh
 
-To run after you've built;
+Then run it in the background;
 
- docker run flash_policy_server
+ docker run -d flash_policy_server
 
 == Contributing to flash-policy-server
  
