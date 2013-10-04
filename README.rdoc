@@ -35,13 +35,13 @@ an explanation.
 
 == Running in Docker
 
-Don't like running stuff as root? Run it in docker. You can customize the crossdomain.xml file if you need (in the /docker directory) and then rebuild with sh build.sh.
+Don't like running stuff as root? Run it in a {docker}[http://www.docker.io/] container. Customize the crossdomain.xml file if you need (in the /docker directory) and then rebuild;
+
+ sh build.sh
 
 To run after you've built;
 
-```bash
-docker run flash_policy_server
-```
+ docker run flash_policy_server
 
 == Contributing to flash-policy-server
  
