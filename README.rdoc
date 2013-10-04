@@ -37,7 +37,8 @@ an explanation.
 
 Don't like running stuff as root? Run it in a {docker}[http://www.docker.io/] container. Customize the crossdomain.xml file if you need (in the /docker directory) and then rebuild;
 
- sh build.sh
+ cd docker
+ docker build -t="flash_policy_server" .
 
 Then run it in the background;
 
