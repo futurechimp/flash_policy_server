@@ -33,6 +33,16 @@ http://www.adobe.com/devnet/flashplayer/articles/socket_policy_files.html
 See http://ruby.about.com/od/rubyversionmanager/qt/Rvm-And-Sudo.htm for
 an explanation. 
 
+== Running in Docker
+
+Don't like running stuff as root? Run it in docker. You can customize the crossdomain.xml file if you need (in the /docker directory) and then rebuild with sh build.sh.
+
+To run after you've built;
+
+```bash
+docker run flash_policy_server
+```
+
 == Contributing to flash-policy-server
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
