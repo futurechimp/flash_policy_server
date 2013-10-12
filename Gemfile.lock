@@ -13,9 +13,10 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
-  bundler (~> 1.0.0)
+  bundler (~> 1.0)
   jeweler (~> 1.6.4)
   minitest
   rcov
