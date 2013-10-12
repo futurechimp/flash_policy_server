@@ -29,7 +29,6 @@ Gem::Specification.new do |s|
     "docker/Dockerfile",
     "docker/crossdomain.xml",
     "flash_policy_server-0.0.9.gem",
-    "flash_policy_server-0.1.0.gem",
     "flash_policy_server.gemspec",
     "generators/crossdomain.xml",
     "lib/flash_policy_server.rb",
